@@ -13,7 +13,7 @@ import pandas as pd
 
 
 def ingest_data():
-
+    ######
     df = pd.read_fwf('clusters_report.txt', index_col = False, header = None, skiprows = 4 ,
                  names = ['cluster', 'cantidad_de_palabras_clave', 'porcentaje_de_palabras_clave','principales_palabras_clave'])
     columns_fill = ['cluster', 'cantidad_de_palabras_clave', 'porcentaje_de_palabras_clave']
